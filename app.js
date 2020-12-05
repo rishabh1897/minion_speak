@@ -1,5 +1,7 @@
+console.log("Hello script")
 var btnTranslate = document.querySelector("#btn-translate");
 var txtInput = document.querySelector("#input-txt");
+console.log(txtInput)
 var outputDiv = document.querySelector("#output");
 
 var serverURL = "https://api.funtranslations.com/translate/minion.json"
@@ -15,6 +17,7 @@ function errorHandler(error) {
 
 function clickHandler() {
     var inputTxt = txtInput.value; //takin input
+    console.log(inputTxt);
 
     //callin server for processing
     fetch(getTranslation(inputTxt))
