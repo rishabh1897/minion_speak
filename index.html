@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>minion speaks</title>
+    <style>
+        textarea {
+            width: 70%;
+            display: block;
+            height: 1rem;
+            margin: 1rem;
+            background: white;
+            border: 0;
+            box-shadow: inset 0 0 5px black;
+            padding-top: 1rem;
+            padding-left: 1rem;
+            padding-right: 3rem;
+            padding-bottom: 2rem;
+            }
+
+        #output{
+            border: 1px solid black;
+            height: 10vh;
+            width: 70%;
+            margin: 1rem;
+            padding: 1rem;
+        }    
+    </style>
 </head>
 <body>
     <h1>minion app</h1>
+    <div class="form-group shadow-textarea">
+        <textarea id="input-txt" placeholder="Type your phrase here..."></textarea>
+    </div>
+    <button id="btn-translate">translate</button>
+    <div style="font-size: larger;">result will be here 👇</div>
+    <div id="output"></div>
     <script src="app.js" type="text/javasrcipt"></script>
 </body>
 </html>
